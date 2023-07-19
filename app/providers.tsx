@@ -7,7 +7,7 @@ import theme from "./theme";
 export function Providers({ children }: { children: React.ReactNode }) {
   return (
     <CacheProvider>
-      <ColorModeScript initialColorMode="dark" />
+      {/*<ColorModeScript initialColorMode="dark" />*/}
       <ChakraProvider theme={theme}>{children}</ChakraProvider>
     </CacheProvider>
   );
