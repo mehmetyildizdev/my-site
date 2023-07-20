@@ -1,4 +1,10 @@
 import { Box, Heading, Text, Button, Flex, Stack } from "@chakra-ui/react";
+import { EmailIcon } from "@chakra-ui/icons";
+import { FaTelegramPlane } from "react-icons/fa";
+import { FiGithub } from "react-icons/fi";
+import { AiFillLinkedin } from "react-icons/ai";
+import { AiFillTwitterSquare } from "react-icons/ai";
+import { AiFillFacebook } from "react-icons/ai";
 
 export default function Hero() {
   return (
@@ -16,7 +22,6 @@ export default function Hero() {
         <div>A Front-End Web Developer</div>
       </Heading>
       <Text
-        fontStyle="Karla"
         fontSize={{ base: "sm", md: "2xl" }}
         maxW="60%"
         textAlign="center"
@@ -30,7 +35,6 @@ export default function Hero() {
         </span>
       </Text>
       <Text
-        fontStyle="Karla"
         fontSize={{ base: "sm", md: "2xl" }}
         maxW="60%"
         textAlign="center"
@@ -45,37 +49,69 @@ export default function Hero() {
       </Text>
       <Stack
         className="motion-safe:animate-pulse"
-        direction="row"
-        spacing="10"
+        direction={{ base: "row", md: "row" }}
+        spacing={{ base: 4, md: 10 }}
         px={{ base: 4, md: 8 }}
       >
         <Button
           className=" shadow-lg shadow-rose-600 ease-in duration-300 hover:scale-105"
           colorScheme="blue"
           variant="solid"
+          rounded={"full"}
+          w={12}
+          h={12}
         >
-          Learn More
+          <AiFillLinkedin fontSize={48} />
         </Button>
         <Button
           className=" shadow-lg shadow-rose-600 ease-in duration-300 hover:scale-105"
           colorScheme="blue"
           variant="solid"
+          rounded={"full"}
+          w={12}
+          h={12}
         >
-          Learn More
+          <AiFillTwitterSquare style={{ fontSize: "4em" }} />
+        </Button>
+        <Button
+          className=" shadow-lg shadow-rose-600 ease-in duration-300 hover:scale-110"
+          colorScheme="blue"
+          variant="solid"
+          rounded={"full"}
+          w={12}
+          h={12}
+        >
+          <AiFillFacebook size="48px" />
         </Button>
         <Button
           className=" shadow-lg shadow-rose-600 ease-in duration-300 hover:scale-105"
           colorScheme="blue"
           variant="solid"
+          rounded={"full"}
+          w={12}
+          h={12}
         >
-          Learn More
+          <FaTelegramPlane style={{ fontSize: 24 }} />
         </Button>
         <Button
           className=" shadow-lg shadow-rose-600 ease-in duration-300 hover:scale-105"
           colorScheme="blue"
           variant="solid"
+          rounded={"full"}
+          w={12}
+          h={12}
         >
-          Learn More
+          <FiGithub fontSize={24} />
+        </Button>
+        <Button
+          className=" shadow-lg shadow-rose-600 ease-in duration-300 hover:scale-105"
+          colorScheme="blue"
+          variant="solid"
+          rounded={"full"}
+          w={12}
+          h={12}
+        >
+          <EmailIcon fontSize={24} />
         </Button>
       </Stack>
     </Flex>
