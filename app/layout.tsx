@@ -2,10 +2,6 @@ import Header from "./components/Header";
 import "./globals.css";
 import { Providers } from "./providers";
 import type { Metadata } from "next";
-import { Rubik, Karla } from "next/font/google";
-
-const inter = Rubik({ subsets: ["latin"] });
-const karla = Karla({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,8 +14,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={`${inter.className} ${karla.className}`}>
+    <html lang="en" suppressHydrationWarning={true}>
+      <body suppressHydrationWarning={true}>
         <Providers>
           <Header />
           {children}
