@@ -1,3 +1,4 @@
+//no longer used
 import { extendTheme } from "@chakra-ui/react";
 import type { StyleFunctionProps } from "@chakra-ui/styled-system";
 import { mode } from "@chakra-ui/theme-tools";
@@ -6,7 +7,7 @@ const theme = extendTheme({
   config: { initialColorMode: "dark", useSystemColorMode: true },
   styles: {
     global: (props: StyleFunctionProps) => ({
-      body: {},
+      body: { bg: "p.diamond" },
     }),
   },
   semanticTokens: {
