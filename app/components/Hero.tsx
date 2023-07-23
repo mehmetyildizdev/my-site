@@ -1,3 +1,4 @@
+"use client";
 import { Box, Heading, Text, Button, Flex, Stack } from "@chakra-ui/react";
 import { EmailIcon } from "@chakra-ui/icons";
 import { FaTelegramPlane } from "react-icons/fa";

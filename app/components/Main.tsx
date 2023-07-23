@@ -1,8 +1,27 @@
 "use client";
-import { Center, Container, Heading, SimpleGrid, Text } from "@chakra-ui/react";
+import {
+  Button,
+  Center,
+  Container,
+  Grid,
+  Heading,
+  SimpleGrid,
+  Text,
+  useTheme,
+} from "@chakra-ui/react";
 import React from "react";
+import {
+  BiLogoLinkedin,
+  BiLogoFacebook,
+  BiLogoTwitter,
+  BiLogoTelegram,
+  BiLogoGithub,
+  BiEnvelope,
+} from "react-icons/bi";
 
 function Main() {
+  const theme = useTheme() as any;
+  const shadowColor = theme.semanticTokens.colors.p.gold._light;
   return (
     <>
       <Center h={`calc(100vh - 4em)`}>
@@ -13,7 +32,6 @@ function Main() {
             fontWeight="bold"
             textAlign="center"
             mb={6}
-            color="#FFD700"
           >
             <div>
               Hello! I&apos;m{" "}
@@ -38,6 +56,105 @@ function Main() {
               </span>
             </Text>
           </Container>
+          <Center>
+            <Grid
+              width={{ base: "100%", md: "60%", lg: "40%" }}
+              p={2}
+              templateColumns="repeat(6, 1fr)"
+              gap={2}
+            >
+              <Button
+                className="transition-all motion-safe:animate-pulse ease-in duration-300 hover:scale-110"
+                justifySelf="center"
+                color="p.gold"
+                width="48px"
+                height="48px"
+                fontSize="32px"
+                variant="ghost"
+                borderColor="p.gold"
+                borderRadius="full"
+                boxShadow={`0 4px 8px 0px ${shadowColor}`}
+                p="0"
+              >
+                <BiLogoLinkedin />
+              </Button>
+              <Button
+                className="transition-all motion-safe:animate-pulse ease-in duration-300 hover:scale-110"
+                justifySelf="center"
+                color="p.gold"
+                width="48px"
+                height="48px"
+                fontSize="32px"
+                variant="ghost"
+                borderColor="p.gold"
+                borderRadius="full"
+                boxShadow={`0 4px 8px 0px ${shadowColor}`}
+                p="0"
+              >
+                <BiLogoTwitter />
+              </Button>
+              <Button
+                className="transition-all motion-safe:animate-pulse ease-in duration-300 hover:scale-110"
+                justifySelf="center"
+                color="p.gold"
+                width="48px"
+                height="48px"
+                fontSize="32px"
+                variant="ghost"
+                borderColor="p.gold"
+                borderRadius="full"
+                boxShadow={`0 4px 8px 0px ${shadowColor}`}
+                p="0"
+              >
+                <BiLogoFacebook />
+              </Button>
+              <Button
+                className="transition-all motion-safe:animate-pulse ease-in duration-300 hover:scale-110"
+                justifySelf="center"
+                color="p.gold"
+                width="48px"
+                height="48px"
+                fontSize="32px"
+                variant="ghost"
+                borderColor="p.gold"
+                borderRadius="full"
+                boxShadow={`0 4px 8px 0px ${shadowColor}`}
+                p="0"
+              >
+                <BiLogoGithub />
+              </Button>
+              <Button
+                className="transition-all motion-safe:animate-pulse ease-in duration-300 hover:scale-110"
+                justifySelf="center"
+                color="p.gold"
+                width="48px"
+                height="48px"
+                fontSize="32px"
+                variant="ghost"
+                borderColor="p.gold"
+                borderRadius="full"
+                boxShadow={`0 4px 8px 0px ${shadowColor}`}
+                p="0"
+              >
+                <BiLogoTelegram />
+              </Button>
+              <Button
+                className="transition-all motion-safe:animate-pulse ease-in duration-300 hover:scale-110"
+                justifySelf="center"
+                color="p.gold"
+                width="48px"
+                height="48px"
+                fontSize="32px"
+                variant="ghost"
+                borderColor="p.gold"
+                borderRadius="full"
+                boxShadow={`0 4px 8px 0px ${shadowColor}`}
+                p="0"
+              >
+                <BiEnvelope />
+              </Button>
+            </Grid>
+          </Center>
         </SimpleGrid>
       </Center>
     </>
