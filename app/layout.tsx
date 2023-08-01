@@ -14,7 +14,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning={true}>
+    <html
+      lang="en"
+      suppressHydrationWarning={true}
+      //scrollbar hiding
+      className="overflow-y-scroll no-scrollbar"
+    >
       <body suppressHydrationWarning={true}>
         <Providers>
           <Header />
