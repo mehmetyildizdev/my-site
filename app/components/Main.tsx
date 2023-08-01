@@ -24,8 +24,8 @@ function Main() {
   const shadowColor = theme.semanticTokens.colors.p.gold._light;
   return (
     <>
-      <Center h={`calc(100vh - 4em)`}>
-        <SimpleGrid width={960}>
+      <Center id="Main" h={`calc(100vh - 4em)`}>
+        <SimpleGrid width={1080}>
           <Heading
             as="h1"
             size="2xl"
@@ -136,7 +136,7 @@ function Main() {
                 boxShadow={`0 4px 8px 0px ${shadowColor}`}
                 p="0"
               >
-                <BiLogoTelegram />
+                <BiLogoTelegram style={{ transform: "translate(-2px, 0px)" }} />
               </Button>
               <Button
                 className="transition-all motion-safe:animate-pulse ease-in duration-300 hover:scale-110"
