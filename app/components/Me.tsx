@@ -38,10 +38,11 @@ function Me() {
               borderRadius="24"
               boxShadow={`0 8px 16px 0px ${shadowColor}`}
             >
-              <Center className="p-4">
+              <Center height="100%" className="p-4">
                 <Avatar size="2xl" name="Mehmet YILDIZ" src="/1.jpg" />
               </Center>
             </Box>
+
             <Box
               gridColumn={{
                 base: "1 / span 1",
