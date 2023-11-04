@@ -52,11 +52,18 @@ function Me() {
               pt={{ base: "8", md: "4" }}
             >
               <Text textAlign="justify">
-                I am a full-stack web developer and designer with a passion for
-                computer technologies and a college degree in web design and
-                programming. I have a diverse background in history and
-                academia, which enhances my research and problem-solving
-                abilities.
+                I switched to web design and development field from academic
+                pursuit, and currently employed as an IT support specialist. I
+                always had a passion for computer technologies both hardware and
+                software. I am really glad to be able to turn my passion into
+                profession slowly.
+              </Text>
+              <Text textAlign="justify">
+                Having a researcher background helps me find solutions even on
+                things I do not know yet. I like checking out new methods and
+                use new technologies, and I always try to implement them. Here
+                in this website you might find examples from my works, and
+                please feel free to contact me for anything.
               </Text>
               <br />
               <Text textAlign="justify">
